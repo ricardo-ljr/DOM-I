@@ -56,6 +56,13 @@ navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
+// Navigation Items Color Change
+
+Array.from(navItems).forEach(link => {
+  link.style.color = "green";
+  link.style.textDecoration = "none";
+});
+
 // Another way of doing the navigation bar
 
 // const navItems = document.querySelectorAll("a");
@@ -115,3 +122,22 @@ contactP[2].textContent = siteContent["contact"]["email"];
 
 const footerText = document.querySelectorAll("footer p");
 footerText[0].textContent = siteContent["footer"]["copyright"];
+
+// Add new content tasks
+
+const newNavItem = document.createElement("a");
+newNavItem.textContent = "Great";
+newNavItem.style.color = "green";
+newNavItem.style.textDecoration = "none";
+newNavItem.style.cursor = "pointer";
+
+const newNavItem2 = document.createElement("a");
+newNavItem2.textContent = "Idea";
+newNavItem2.style.color = "green";
+newNavItem2.style.textDecoration = "none";
+newNavItem2.style.cursor = "pointer";
+
+const parentElement = document.querySelector("nav");
+
+parentElement.prepend(newNavItem);
+parentElement.append(newNavItem2);
