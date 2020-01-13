@@ -59,7 +59,7 @@ navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 // Another way of doing the navigation bar
 
 // const navItems = document.querySelectorAll("a");
-// for (let i = 0; i < anchors.length; i++) {
+// for (let i = 0; i < navItems.length; i++) {
 //   navItems[i].innerHTML = Object.values(siteContent["nav"])[i];
 // }
 
@@ -100,3 +100,18 @@ const bottomContentP = document.querySelectorAll(
 bottomContentP[0].textContent = siteContent["main-content"]["services-content"];
 bottomContentP[1].textContent = siteContent["main-content"]["product-content"];
 bottomContentP[2].textContent = siteContent["main-content"]["vision-content"];
+
+// Contact
+
+const contact = document.querySelectorAll(".contact h4");
+contact[0].textContent = siteContent["contact"]["contact-h4"];
+
+const contactP = document.querySelectorAll(".contact p");
+contactP[0].textContent = siteContent["contact"]["address"];
+contactP[1].textContent = siteContent["contact"]["phone"];
+contactP[2].textContent = siteContent["contact"]["email"];
+
+// Footer
+
+const footerText = document.querySelectorAll("footer p");
+footerText[0].textContent = siteContent["footer"]["copyright"];
